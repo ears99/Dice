@@ -35,6 +35,7 @@ void menu() {
 				for(int i = 0; i < numOfRolls; i++) {
 					std::cout << "You rolled: " << d4(RNG)  << std::endl;
 				}
+			std::cin.get();
 			menu();
 		break;
 		case 2:
@@ -43,6 +44,7 @@ void menu() {
 				for(int i = 0; i < numOfRolls; i++) {
 					std::cout << "You rolled: " << d6(RNG)  << std::endl;
 				}
+			std::cin.get();
 			menu();
 		break;
 		case 3:
@@ -51,6 +53,7 @@ void menu() {
 				for(int i = 0; i < numOfRolls; i++) {
 					std::cout << "You rolled: " << d8(RNG)  << std::endl;
 				}
+			std::cin.get();
 			menu();
 		break;
 		case 4:
@@ -59,6 +62,7 @@ void menu() {
 				for(int i = 0; i < numOfRolls; i++) {
 					std::cout << "You rolled: " << d10(RNG)  << std::endl;
 				}
+			std::cin.get();
 			menu();
 		break;
 		case 5:
@@ -67,6 +71,7 @@ void menu() {
 				for(int i = 0; i < numOfRolls; i++) {
 					std::cout << "You rolled: " << d12(RNG)  << std::endl;
 				}
+			std::cin.get();
 			menu();
 		break;
 		case 6:
@@ -75,6 +80,7 @@ void menu() {
 				for(int i = 0; i < numOfRolls; i++) {
 					std::cout << "You rolled: " << d20(RNG)  << std::endl;
 				}
+			std::cin.get();
 			menu();
 		break;
 		case 7:
@@ -83,6 +89,7 @@ void menu() {
 				for(int i = 0; i < numOfRolls; i++) {
 					std::cout << "You rolled: " << d100(RNG) << std::endl;
 				}
+			std::cin.get();
 			menu();
 		break;
 		case 8:
