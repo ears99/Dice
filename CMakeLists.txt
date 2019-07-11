@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.10.2)
 project(Dice VERSION 1.0.0)
 
-if(UNIX and NOT APPLE)
+if(UNIX AND NOT APPLE)
 # build for linux
 		set(LINUX true)
 		message(status ">>> Building for Linux...")
