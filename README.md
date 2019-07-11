@@ -12,7 +12,7 @@ When running the program, it will bring up a menu, like this:
 7. d100
 
 After selecting an option, a prompt will appear, asking you to input a number for the number of times to roll the dice you selected. 
-Once it's done rolling, the program will exit. 
+Once it's done rolling, the program will automatically return you to the main menu. It can't clear the screen after a key is pressed (although I assume that's an error on my part, and for that I apologize). 
 
 ### Compiling
 To compile the program, you will need: 
