@@ -24,6 +24,7 @@ void menu() {
 	std::cout << "5. d12\n";
 	std::cout << "6. d20\n";
 	std::cout << "7. d100\n";
+	std::cout << "8. exit\n";
 	std::cin >> choice; 
 
 	switch(choice) {
@@ -32,62 +33,72 @@ void menu() {
 			std::cout << "How many times would you like to roll? ";
 				std::cin >> numOfRolls;
 				for(int i = 0; i < numOfRolls; i++) {
-					std::cout << d4(RNG)  << std::endl;
+					std::cout << "You rolled: " << d4(RNG)  << std::endl;
 				}
+			menu();
 		break;
 		case 2:
 			std::cout << "How many times would you like to roll? ";
 				std::cin >> numOfRolls;
 				for(int i = 0; i < numOfRolls; i++) {
-					std::cout << d6(RNG)  << std::endl;
+					std::cout << "You rolled: " << d6(RNG)  << std::endl;
 				}
+			menu();
 		break;
 		case 3:
 			std::cout << "How many times would you like to roll? ";
 				std::cin >> numOfRolls;
 				for(int i = 0; i < numOfRolls; i++) {
-					std::cout << d8(RNG)  << std::endl;
+					std::cout << "You rolled: " << d8(RNG)  << std::endl;
 				}
+			menu();
 		break;
 		case 4:
 			std::cout << "How many times would you like to roll? ";
 				std::cin >> numOfRolls;
 				for(int i = 0; i < numOfRolls; i++) {
-					std::cout << d10(RNG)  << std::endl;
+					std::cout << "You rolled: " << d10(RNG)  << std::endl;
 				}
+			menu();
 		break;
 		case 5:
 			std::cout << "How many times would you like to roll? ";
 				std::cin >> numOfRolls;
 				for(int i = 0; i < numOfRolls; i++) {
-					std::cout << d12(RNG)  << std::endl;
+					std::cout << "You rolled: " << d12(RNG)  << std::endl;
 				}
+			menu();
 		break;
 		case 6:
 			std::cout << "How many times would you like to roll? ";
 				std::cin >> numOfRolls;
 				for(int i = 0; i < numOfRolls; i++) {
-					std::cout << d20(RNG)  << std::endl;
+					std::cout << "You rolled: " << d20(RNG)  << std::endl;
 				}
+			menu();
 		break;
 		case 7:
 			std::cout << "How many times would you like to roll? ";
 				std::cin >> numOfRolls;
 				for(int i = 0; i < numOfRolls; i++) {
-					std::cout << d100(RNG) << std::endl;
+					std::cout << "You rolled: " << d100(RNG) << std::endl;
 				}
+			menu();
 		break;
-
+		case 8:
+			std::cout << "exiting program.\n";
+		break;
+			
 		default:
-#ifdef _WIN32
-		system("cls");
-#elif _LINUX
-		system("clear");
-#endif
-		menu();
+			//clear the screen based on the user's operating system. if it's Windows, use cls, if not, use clear.
+			#ifdef _WIN32
+				system("cls");
+			#else
+				system("clear");
+			#endif
+			menu();
 		break;
 	}
-
 }
 
 
